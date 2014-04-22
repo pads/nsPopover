@@ -131,6 +131,7 @@
         });
 
         elm.on(options.trigger, function(e) {
+          e.stopImmediatePropagation()
           e.preventDefault();
 
           hider_.cancel();
